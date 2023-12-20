@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./02-style.css">
+    <title>GTN</title>
+</head>
+
+<body>
+    <div id="game-container">
+        <h2>Guess the Number</h2>
+        <p>Guess a Random Number (1 - 100)</p>
+        <p>You have 10 attempts to guess the number.</p><br>
+        <form action="" class="form">
+            <label for="guessField" id="guess">Enter Your Guess:</label>
+            <input type="number" id="guessField" class="guessField" autocomplete="off" min="1" max="100" required>
+            <button type="submit" id="sub" class="guessSubmit">Submit Guess</button>
+        </form>
+        <div class="resultPress">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+        <div class="button-container">
+            <button id="newGame">Start New Game</button>
+        </div>
+    </div>
+
+    <script src="./02-script.js"></script>
+
+    <div class="pages">
+        <a href="./index.html"><button>1</button></a>
+        <a href="./02-index.html"><button>2</button></a>
+        <a href="./03-index.html"><button>3</button></a>
+    </div>
+</body>
+
+</html>

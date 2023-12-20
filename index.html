@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>RPS</title>
+</head>
+
+<body>
+  <h3>Rock Paper Scissors</h3>
+
+  <div id="scoreContainer" class="scoreContainer">
+    <p id="score">Wins: <span id="wins">0</span>, Losses: <span id="losses">0</span>, Ties: <span id="ties">0</span></p>
+  </div>
+
+
+  <div class="rps-container">
+    <div class="pick" id="computerPick">
+      <p>Computer's Pick</p>
+      <img id="computerPickImage" src="./img/placeholder.png" alt="" height="150" width="150">
+    </div>
+
+    <div class="pick" id="userPick">
+      <p>Your Pick</p>
+      <img id="userPickImage" src="./img/placeholder.png" alt="" height="150" width="150">
+    </div>
+  </div>
+
+  <div class="rps">
+    <button onclick="playGame('Rock');">
+      <img src="./img/rock.png" alt="" height="100" width="100">
+    </button>
+
+    <button onclick="playGame('Paper');">
+      <img src="./img/paper.png" alt="" height="100" width="100">
+    </button>
+
+    <button onclick="playGame('Scissors');">
+      <img src="./img/scissor.jpeg" alt="" height="100" width="100">
+    </button>
+
+    <button onclick="rpsScore(); localStorage.removeItem('score')">
+      <img src="./img/reset.png" alt="" height="100" width="100">
+    </button>
+  </div>
+
+  <script src="./script.js"></script>
+
+  <div class="pages">
+    <a href="./index.html"><button>1</button></a>
+    <a href="./02-index.html"><button>2</button></a>
+    <a href="./03-index.html"><button>3</button></a>
+  </div>
+</body>
+
+</html>

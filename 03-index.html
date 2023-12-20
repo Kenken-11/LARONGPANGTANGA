@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./03-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+  <div id="scoreDisplay">
+    <p>Scores:</p>
+    <p>X: <span id="scoreX">0</span></p>
+    <p>O: <span id="scoreO">0</span></p>
+  </div>
+  <div class="container" id="board">
+    <div class="row">
+      <div class="cell" data-index="0"><img class="playerImage" data-move="0" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+      <div class="cell" data-index="1"><img class="playerImage" data-move="1" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+      <div class="cell" data-index="2"><img class="playerImage" data-move="2" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+    </div>
+    <div class="row">
+      <div class="cell" data-index="3"><img class="playerImage" data-move="3" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+      <div class="cell" data-index="4"><img class="playerImage" data-move="4" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+      <div class="cell" data-index="5"><img class="playerImage" data-move="5" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+    </div>
+    <div class="row">
+      <div class="cell" data-index="6"><img class="playerImage" data-move="6" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+      <div class="cell" data-index="7"><img class="playerImage" data-move="7" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+      <div class="cell" data-index="8"><img class="playerImage" data-move="8" src="./img/white.jpg" width="70px"
+          height="70px"></div>
+    </div>
+  </div>
+  <div class="buttons">
+    <button onclick="undoMove();">Undo</button>
+    <button onclick="resetGame();">Reset</button>
+    <button onclick="makeAIMove();">AI Move</button>
+  </div>
+  <script src="./03-script.js"></script>
+  <div class="pages">
+    <a href="./index.html"><button>1</button></a>
+    <a href="./02-index.html"><button>2</button></a>
+    <a href="./03-index.html"><button>3</button></a>
+  </div>
+</body>
+
+</html>
